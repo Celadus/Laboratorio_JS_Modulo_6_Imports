@@ -1,15 +1,29 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1>TypeScript Sandbox</h1>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
-</html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <link rel="stylesheet" href="/src/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vite + TS</title>
+    </head>
+    <body>
+      <div id="app">
+        <div class="container">
+          <h1>Juego de las siete media</h1>
+          <div id="score">Puntuación: 0</div>
+          <div id="card-container">
+            <img id="card-img" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/cartas/back.jpg" alt="Carta boca abajo">
+          </div>
+          <div class="button-container">
+            <button class="button3d" id="btn_pedir">Pedir Carta</button>
+            <button class="button3d" id="btn_plantarse">Plantarse</button>
+            <button class="button3d" id="btn_nueva_partida" disabled>Nueva Partida</button>
+            <button class="button3d" id="btn_historial" disabled>Historial</button>
+          </div> 
+        </div>  
+      </div>
+      <script type="module" src="/src/main.ts"></script>
+    </body>
+  </html>
